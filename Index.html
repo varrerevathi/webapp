@@ -1,54 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>My Basic Web App</title>
+  <<title>Skill Match App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f7fa;
+      color: #333;
+    }
+
+    header {
+      background: #4a90e2;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 600px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #4a90e2;
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="file"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+    }
+
+    .options {
+      margin: 15px 0;
+    }
+
+    .options input {
+      margin-right: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #4a90e2;
+      color: #fff;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 6px;
+      margin-top: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: #357ab8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to My Web App</h1>
-  <p>This is a simple web page built using only HTML.</p>
+  <header>
+    Skill Match Web Application
+  </header>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="#home">Home</a> | 
-    <a href="#about">About</a> | 
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <hr>
-
-  <!-- Home Section -->
-  <section id="home">
-    <h2>Home</h2>
-    <p>This is the homepage of the app.</p>
-  </section>
-
-  <!-- About Section -->
-  <section id="about">
-    <h2>About</h2>
-    <p>This app is made using <b>only HTML</b>. No CSS, no JavaScript.</p>
-  </section>
-
-  <!-- Contact Section with a form -->
-  <section id="contact">
-    <h2>Contact Us</h2>
+  <div class="container">
+    <h2>Register</h2>
     <form>
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name"><br><br>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your full name" required>
 
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email"><br><br>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
 
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message"></textarea><br><br>
+      <div class="options">
+        <p><strong>Select Option:</strong></p>
+        <input type="radio" id="team" name="choice">
+        <label for="team">Create a Team</label>
+        <input type="radio" id="job" name="choice">
+        <label for="job">Job Shortlist</label>
+      </div>
 
-      <input type="submit" value="Send">
+      <label for="resume">Upload Resume</label>
+      <input type="file" id="resume">
+
+      <button class="btn" type="submit">Submit</button>
     </form>
-  </section>
+  </div>
 
-  <hr>
   <footer>
-    <p>&copy; 2025 My Web App</p>
+    &copy; 2025 Skill Match | Demo Version (HTML & CSS Only)
   </footer>
+  <p>The purpose of a “Skill Match Web Application” topic is mainly:
+1. Demonstration of Web Development Basics
+Shows how to design a simple front-end using HTML (structure) and CSS (design).
+Helps beginners practice creating forms, buttons, file uploads, and layout.
+2. Understanding Real-World Use Case
+Skill matching is widely used in job portals, recruitment platforms, and team-building tools.
+Demonstrates how users can register, upload resumes, and match skills to opportunities.
+3. Foundation for Advanced Projects
+Starting with HTML & CSS makes it easy to later add JavaScript, databases, and backend logic.
+Prepares you for dynamic skill-matching applications (like LinkedIn, Naukri, or Hackathon team builders).
+4. Educational Purpose
+Helps students explain a mini-project idea in college or training programs.
+Shows how to convert a problem statement (matching skills) into a working UI demo.
+</p>
 </body>
 </html>
